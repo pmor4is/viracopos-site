@@ -32,6 +32,12 @@ html {
         /* Espaços para ajustar responsividade */
         padding: 15vh 0vh 20vh;
     }
+    .contactText {
+        margin-top: 30vh;
+    }
+    #contactContainer {
+        padding-bottom: 100px;
+    }
 
     
     
@@ -64,8 +70,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky; */
+    position: fixed;
     width: 100vw;
     height: 13vh;
     font-family: CollegiateHeavyOutline;
@@ -500,6 +506,7 @@ button #formControl button {
 /* CONTACT PAGE */
 #contactPageSection {
     /* Altura relativa ao menu principal */
+    padding-top: 14vh;
     height: 70vh;
 
     display: flex;
