@@ -12,6 +12,9 @@ html {
     #homeSection {
         height: 100vh;
     }
+    #homeSection p {
+        font-size: 1.5rem;
+    }
     #contactPageSection {
         display: flex;
         flex-direction: column;
