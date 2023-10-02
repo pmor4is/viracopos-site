@@ -10,7 +10,7 @@ html {
 
 @media (max-width:768px) {
     #homeSection {
-        height: 80vh;
+        height: 100vh;
     }
     #contactPageSection {
         display: flex;
