@@ -10,24 +10,26 @@ html {
 
 /* Ajustes no CSS para responsividade em mobile */
 @media (max-width:768px) {
+    /* AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     #homeSection {
         height: 100vh;
     }
     #homeSection p {
         font-size: 1.2rem;
     }
+    /* Logotipo some quando visualizado em celular */
+    .homeImage {
+        display: none;
+    }
+    /* FIM DOS AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
+    
     #aboutUsSectionContent {
         height: 100vh;
     }
     #contactSection {
         height: 100vh;
     }
-    #houseSection {
-
-    }
-    .containerSlider {
-        width: 5px;
-    }
+    
     /* AJUSTES PARA A PÁGINA DE CONTATO */
     /* Redirecionamento vertical do conteúdo */
     #contactPageSection {
@@ -38,19 +40,26 @@ html {
         /* Espaços para ajustar responsividade */
         padding: 15vh 0vh 20vh;
     }
-    #houseSection {
-
-    }
     .contactText {
         margin-top: 30vh;
     }
     #contactContainer {
         padding-bottom: 100px;
     }
+
+    /* AJUSTES PARA O TAMANHO DO CARROSSEL */
     .carrosselContainer {
         width: 80%;
     }
-
+    /* FIM DO AJUSTES PARA A PÁGINA DE CONTATO */
+    
+    /* AJUSTES DO FORMULÁRIO */
+    #formContainer {
+        width: 50vw;
+        font-size: 20px;
+    }
+    /* FIM DOS AJUSTES DO FORMULÁRIO */
+    
     /* AJUSTES DO FOOTER */
     /* Redirecionamento vertical do conteúdo */
     #footerSection {
@@ -65,10 +74,6 @@ html {
         width: 40%;
     }
 
-    /* Logotipo some quando visualizado em celular */
-    .homeImage {
-        display: none;
-    }
 }
 
 /* Edição do menu de navegação */
@@ -192,7 +197,6 @@ html {
     position: relative;
     z-index: 1;
 }
-
 .containerSlider {
     display: flex;
     /* flex-direction: column; */
@@ -208,7 +212,6 @@ html {
     align-items: center;
     text-align: center;
 }
-
 .containerImages {
     position:relative;
     display: flex;
@@ -216,7 +219,6 @@ html {
     justify-content: center;
     width: 500px;
 }
-
 .slider {
     opacity: 0;
     transition: opacity .2s;
@@ -225,26 +227,20 @@ html {
     border-radius: 10px;
     z-index: 0;
 }
-
 .on {
     opacity: 1;
 }
-
-#prevButton,
-#nextButton {
+#prevButton, #nextButton {
     width: 30px;
     height: 30px;
     border: none;
     /* background-color: transparent; */
     cursor: pointer;
 }
-
-#prevButton img,
-#nextButton img {
+#prevButton img, #nextButton img {
     width: 100%;
     height: 100%;
 }
-
 #prevButton {
     transform: rotate(180deg);
 }
@@ -260,32 +256,56 @@ html {
     background-color: lightgray;
     text-align: center;
 }
-
 #contactSection p {
     font-size: 2vh;
 }
 
+/* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
 #formContainer {
     background-color: #bbb8b8;
     /* Flexbox */
     display: flex;
     flex-direction: column;
     /* Dimensões envolta do container */
-    /* padding-inline: 10vw; */
     padding: 2vh;
-    /* padding-bottom: 20px; */
     border-radius: 20px;
-    /* Margem ao redor do container */
-    margin: 40px;
     /* opacity: 0.5; */
 }
-
 #formControl {
     opacity: 1;
     display: flex;
     flex-direction: column;
 }
-
+#formControl input, #formControl button {
+    display: block;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+#formControl input {
+    margin-bottom: 1rem;
+    /* color: #FFFFFF; */
+    background: #dad8d8;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s box-shadow 0.3s;
+}
+input:hover, input:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 0.3125rem;
+}
+#formControl button {
+    border: none;
+    border-radius: 99px;
+    background: #3d3c3c;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover, button:focus {
+    outline: none;
+    background-color: #000000;
+}
 .whatsAppContactButton {
     display: flex;
     flex-direction: row;
@@ -297,99 +317,6 @@ html {
     text-decoration: none;
 }
 
-#formContainer2 {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    margin: 5vw;
-    padding: 50vh;
-    background-color: darkgray;
-    padding: 1rem;
-    font-family: AvantGarde;
-}
-
-form {
-    width: 100%;
-    max-width: 30rem;
-}
-
-label,
-input,
-textarea,
-button {
-    display: block;
-}
-
-input,
-textarea,
-button {
-    /* width: 100%; */
-    /* font: inherit; */
-    padding: 1.25rem;
-    font-weight: 700;
-}
-
-input,
-textarea {
-    margin-bottom: 1rem;
-    /* color: #FFFFFF; */
-    background: #dad8d8;
-    border: 0.125rem solid transparent;
-    border-radius: 1.125rem;
-    transition: border-color 0.3s box-shadow 0.3s;
-
-}
-
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-    outline: none;
-    border-color: #000000;
-    box-shadow: 0 0 0 0.3125rem;
-}
-
-label {
-    margin-bottom: 0.5rem;
-    color: #3d3c3c;
-}
-
-textarea {
-    min-height: 12.5rem;
-    resize: vertical;
-}
-
-button {
-    border: none;
-    border-radius: 99px;
-    background: #3d3c3c;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover,
-button:focus {
-    outline: none;
-    background-color: #000000;
-}
-
-button #formControl button {
-    font-size: large;
-    padding: 1vw;
-    border-radius: 5px;
-    background-color: #000000;
-    color: white;
-}
-
-#formControl input {
-    font-size: larger;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    padding-inline: 8vw;
-    border-radius: 5px;
-    text-align: left;
-}
 
 /* ABOUT US */
 #aboutUsPageSection {
