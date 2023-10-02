@@ -9,10 +9,14 @@ html {
 }
 
 @media (max-width:768px) {
+    #homeSection {
+        height: 80vh;
+    }
     #contactPageSection {
         display: flex;
         flex-direction: column;
     }
+
 
     #footerStyle {
         background-color: #cecece;
