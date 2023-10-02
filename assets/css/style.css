@@ -23,12 +23,6 @@ html {
     }
     /* FIM DOS AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     
-    #aboutUsSection {
-        height: 100vh;
-    }
-    #contactSection {
-        height: 100vh;
-    }
     
     /* AJUSTES PARA A PÁGINA DE CONTATO */
     /* Redirecionamento vertical do conteúdo */
@@ -251,7 +245,6 @@ html {
     align-items: center;
     /* Padding em cima e embaixo com 3vh e laterais com 10vw */
     padding: 3vh 10vw;
-    /* height: 90vh; */
     background-color: lightgray;
     text-align: center;
 }
