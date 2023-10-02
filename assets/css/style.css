@@ -23,7 +23,11 @@ html {
     }
     /* FIM DOS AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     
-    
+    .aboutUsText {
+        width: 100%;
+        margin: 1vh 0;
+    }
+
     /* AJUSTES PARA A PÁGINA DE CONTATO */
     /* Redirecionamento vertical do conteúdo */
     #contactPageSection {
