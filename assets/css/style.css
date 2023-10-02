@@ -8,6 +8,7 @@ html {
     background-color: #000000;
 }
 
+/* Ajustes no CSS para responsividade em mobile */
 @media (max-width:768px) {
     #homeSection {
         height: 100vh;
@@ -18,12 +19,17 @@ html {
     #aboutUsSectionContent {
         height: 100vh;
     }
-    #primaryMenu {
-        position: static;
-        height: auto;
+    #contactSection {
+        height: 100vh;
     }
+    #houseSection {
 
-
+    }
+    .containerSlider {
+        width: 5px;
+    }
+    /* AJUSTES PARA A PÁGINA DE CONTATO */
+    /* Redirecionamento vertical do conteúdo */
     #contactPageSection {
         display: flex;
         flex-direction: column;
@@ -32,20 +38,21 @@ html {
         /* Espaços para ajustar responsividade */
         padding: 15vh 0vh 20vh;
     }
+    #houseSection {
+
+    }
     .contactText {
         margin-top: 30vh;
     }
     #contactContainer {
         padding-bottom: 100px;
     }
-
-    
-    
-    #footerStyle {
-        background-color: #cecece;
+    .carrosselContainer {
+        width: 80%;
     }
 
-    /* Ajuste vertical do footer para celulares */
+    /* AJUSTES DO FOOTER */
+    /* Redirecionamento vertical do conteúdo */
     #footerSection {
         background-color: #000000;
         display: flex;
@@ -53,7 +60,6 @@ html {
         /* Aumento de fonte para dispositivos móveis */
         font-size: 15px;
     }
-
     /* Redimensionamento da imagem de rodapé */
     .imageContainer {
         width: 40%;
@@ -70,7 +76,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: -webkit-sticky; */
     position: fixed;
     width: 100vw;
     height: 13vh;
@@ -178,11 +183,14 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 45vh;
     /* Padding em cima e embaixo com 3vh e laterais com 10vw */
-    padding: 5vh 10vw;
+    padding: 0vh 0 5vw;
     background-color: gray;
     text-align: center;
+    /* position relative faz evitar que as fotos sobrepoem outro elemento */
+    position: relative;
+    z-index: 1;
 }
 
 .containerSlider {
@@ -192,6 +200,13 @@ html {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    position: relative;
+}
+.carrosselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .containerImages {
@@ -208,6 +223,7 @@ html {
     position:absolute;
     width: 100%;
     border-radius: 10px;
+    z-index: 0;
 }
 
 .on {
