@@ -55,7 +55,7 @@ html {
     
     /* AJUSTES DO FORMULÁRIO */
     #formContainer {
-        width: 50vw;
+        width: 85vw;
         font-size: 20px;
     }
     /* FIM DOS AJUSTES DO FORMULÁRIO */
@@ -266,6 +266,7 @@ html {
     /* Flexbox */
     display: flex;
     flex-direction: column;
+    width: 60vw;
     /* Dimensões envolta do container */
     padding: 2vh;
     border-radius: 20px;
@@ -313,8 +314,9 @@ button:hover, button:focus {
     padding: 10px;
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: 99px;
     text-decoration: none;
+    font-family: RobotoMedium;
 }
 
 
