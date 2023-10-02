@@ -23,7 +23,7 @@ html {
     }
     /* FIM DOS AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     
-    #aboutUsSectionContent {
+    #aboutUsSection {
         height: 100vh;
     }
     #contactSection {
@@ -163,7 +163,6 @@ html {
     display: flex;
     flex-direction: column;
 
-    height: 80vh;
     background-color: lightgray;
     padding-inline: 10vw;
     padding-top: 5vh;
@@ -252,12 +251,16 @@ html {
     align-items: center;
     /* Padding em cima e embaixo com 3vh e laterais com 10vw */
     padding: 3vh 10vw;
-    height: 90vh;
+    /* height: 90vh; */
     background-color: lightgray;
     text-align: center;
 }
+.contactSectionText {
+    
+}
 #contactSection p {
     font-size: 2vh;
+    margin-bottom: 1.8vh;
 }
 
 /* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
@@ -307,11 +310,15 @@ button:hover, button:focus {
     outline: none;
     background-color: #000000;
 }
+.formMessage {
+    height: 5vh;
+}
 .whatsAppContactButton {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: 1vh;
+    margin-bottom: 1vh;
     background-color: black;
     color: white;
     border-radius: 99px;
