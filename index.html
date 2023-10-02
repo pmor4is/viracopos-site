@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UNIFEI, república, universitário">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link para o CSS do swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+    <script defer type="text/javascript" src="./assets/js/code.js"></script>
+    <!-- Script para utilização do swiper para o carrossel -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Republica Viracopos</title>
+</head>
+
+<body>
+    <!-- Edição da barra de navegação -->
+    <nav id="primaryMenu">
+        <nav link="nav-brand logoFont" href="#">VIRACOPOS</nav>
+        <ul>
+            <li> <a href="#homeSection">início</a></li>
+            <li> <a href="./view/pages/abous-us-page.html">sobre nós</a> </li>
+            <li> <a href="./view/pages/house-page.html">a casa</a> </li>
+            <li> <a href="./view/pages/member-page.html">membros</a> </li>
+            <li> <a href="./view/pages/contact-page.html">contato</a> </li>
+        </ul>
+    </nav>
+
+    <!-- Seção inicial -->
+    <section id="homeSection">
+        <div id="homeSectionFirstContent">
+            <p>A República Viracopos é uma república estudantil da Universidade Federal de Itajubá, campus Itabira</p>
+        </div>
+        <div id="homeSectionSecondContent">
+            <p>Nossa República é mais do que apenas um lugar para morar durante seus anos na universidade; é um espaço
+                onde a sua jornada acadêmica ganha vida, e onde amizades duradouras e experiências enriquecedoras estão
+                no centro de tudo o que fazemos.</p>
+            <img class="homeImage" src="./assets/img/viracopos-logo.svg" alt="viracopos">
+
+        </div>
+    </section>
+
+    <!-- Seção sobre nós -->
+    <section id="aboutUsSection">
+        <h1>Conheça nossa história</h1>
+        <div id="aboutUsSectionContent">
+            <h2>Nossa Missão</h2>
+            <p>Descubra como estamos comprometidos em criar um ambiente acolhedor para promover o seu
+                crescimento pessoal e acadêmico.</p>
+            <h2>Nossos valores</h2>
+            <p>Saiba mais sobre os princípios que nos orientam: confiança, respeito,
+                confidencialidade e companheirismo</p>
+            <h2>Nossa comunidade</h2>
+            <p>Conheça os rostos que fazem parte da nossa República e saiba como você pode se
+                tornar parte desta família</p>
+            <h2>Eventos e atividades</h2>
+            <p>Mantenha-se atualizado sobre os eventos e atividades emocionantes que fazem
+                parte da vida na República Viracopos.</p>
+            <h2>A melhor casa que você pode morar</h2>
+            <p>Na República Viracopos, estamos empenhados em criar um ambiente onde o seu crescimento pessoal e
+                acadêmico
+                floresça, onde cada dia é uma oportunidade para fazer novas amizades e criar memórias inesquecíveis.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção sobre a casa -->
+    <section id="houseSection">
+        <!-- Carrossel de imagem -->
+        <div class="containerSlider">
+            <button id="prevButton"><img src="./assets/img/icons/arrow.png"></button>
+            <div class="containerImages">
+                <img src="./assets/img/photos/photo1.jpg" class="slider on">
+                <img src="./assets/img/photos/photo2.jpg" class="slider">
+                <img src="./assets/img/photos/photo3.jpg" class="slider">
+                <img src="./assets/img/photos/photo4.jpg" class="slider">
+            </div>
+            <button id="nextButton"><img src="./assets/img/icons/arrow.png"></button>
+        </div>
+    </section>
+
+
+    <!-- Seção com formulario de interesse -->
+    <section id="contactSection">
+        <div>
+            <h1>Deseja fazer parte de uma república na sua vida estudantil?</h1>
+            <p>Faça parte da nossa história e vamos juntos viver a melhor experiência universitária</p>
+        </div>
+
+        <!-- Link para enviar mensagem por whatsApp -->
+        <!-- href criado de acordo com a documentação da API do whatsApp -->
+        <a href="https://wa.me/5512982719099" class="button whatsAppContactButton">
+            <img src="./assets/img/whatsapp-logo.svg" height="30px" width="30px">
+            ENVIE UMA MENSAGEM
+        </a>
+        <h3>OU</h3>
+        <!-- <div id="formContainer2"> -->
+        <!-- API formsubmit para enviar e-mail. 
+            https://formsubmit.co/seu-email ou formsubmit.co/string-gerada-pelo-form-submit -->
+        <!-- <form action="https://formsubmit.co/8112967f59d1840cfaf071641cd8934b" method="POST"> -->
+        <!-- Na label, o for deve ser o mesmo id do input -->
+        <!-- <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required />
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+                <label for="Mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+             </form>
+        </div> -->
+        <div id="formContainer">
+            <h2>Venha morar conosco</h2>
+            <form action="https://formsubmit.co/8112967f59d1840cfaf071641cd8934b" method="POST" id="formControl">
+                <input type="text" placeholder="Nome completo" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="number" placeholder="Número de celular" required>
+                <input type="mensagem" placeholder="Mensagem" required>
+                <button type="submit" onclick="#">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Rodapé do site -->
+    <footer id="footerStyle">
+        <section id="footerSection">
+            <div>
+                <ul>
+                    <li>início</li>
+                    <li>sobre nós</li>
+                    <li>a casa</li>
+                    <li>membro</li>
+                    <li>contato</li>
+                    <li>Copyright © 2023</li>
+                    <li>República Viracopos</li>
+                </ul>
+            </div>
+            <div class="imageContainer">
+                <img class="footerImage" src="./assets/img/viracopos-logo.svg" alt="viracopos">
+            </div>
+            <div>
+                <ul>
+                    <li>Rua Mato Grosso 384</li>
+                    <li>Bairro Amazonas</li>
+                    <li>Itabira, Minas Gerais</li>
+                    <li>UNIFEI</li>
+                    <li>Campus Itabira</li>
+                    <li>Telefones de contato:</li>
+                    <li>Elson (Trivago): 99999-9999</li>
+                    <li>Ruan (DJ): 99999-9999</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção com links de redes sociais -->
+        <section id="socialNetworkLinks">
+            <div>
+                <a href="https://www.instagram.com/viracopos_rep/">
+                    <img class="footerLinks" src="./assets/img/facebook-icon.svg">
+                </a>
+                <a href="https://www.instagram.com/viracopos_rep/">
+                    <img class="footerLinks" src="./assets/img/instagram-icon.svg">
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
