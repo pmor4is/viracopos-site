@@ -56,6 +56,9 @@ html {
     .carrosselContainer {
         width: 80%;
     }
+    #photoSection {
+        padding: 2vh 0;
+    }
     /* FIM DO AJUSTES PARA A PÁGINA DE CONTATO */
     
     /* AJUSTES DO FORMULÁRIO */
@@ -185,7 +188,7 @@ html {
     justify-content: center;
     height: 45vh;
     /* Padding em cima e embaixo com 5vh */
-    padding: 5vh 0 5vw;
+    padding: 5vh 0;
     background-color: gray;
     text-align: center;
     /* position relative faz evitar que as fotos sobrepoem outro elemento */
