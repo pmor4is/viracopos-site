@@ -11,9 +11,6 @@ html {
 /* Ajustes no CSS para responsividade em mobile */
 @media (max-width:768px) {
     /* AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
-    #homeSection {
-        /* height: 60vh; */
-    }
     #homeSection p {
         font-size: 1.2rem;
     }
