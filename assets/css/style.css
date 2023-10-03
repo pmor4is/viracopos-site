@@ -24,6 +24,7 @@ html {
     }
     .homeImage {
         align-items: center;
+        padding-bottom: 10vh;
         width: 100%;
         height: 100%;
     }
@@ -269,7 +270,7 @@ html {
     /* Flexbox */
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    width: 60vw;
     /* Dimensões envolta do container */
     padding: 2vh;
     border-radius: 20px;
