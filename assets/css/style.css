@@ -418,6 +418,10 @@ button:hover, button:focus {
     text-align: center;
     color: #FFFFFF;
 }
+#bedroomSection p {
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+}
 #bedroomPhotosCarrossel {
     display: flex;
     flex-direction: column;
