@@ -269,7 +269,7 @@ html {
     /* Flexbox */
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 80vw;
     /* Dimensões envolta do container */
     padding: 2vh;
     border-radius: 20px;
