@@ -22,14 +22,14 @@ html {
         gap: 0.5vh;
         align-items: center;
     }
-    /* Logotipo some quando visualizado em celular */
     .homeImage {
         align-items: center;
         width: 100%;
-        /* display: none; */
+        height: 100%;
     }
     /* FIM DOS AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     
+    /* AJUSTES HOMEPAGE ABOUTUS SECTION */
     .aboutUsText {
         width: 100%;
         margin: 1vh 0;
