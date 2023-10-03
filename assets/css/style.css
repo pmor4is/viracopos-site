@@ -12,7 +12,7 @@ html {
 @media (max-width:768px) {
     /* AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     #homeSection {
-        height: 60vh;
+        /* height: 60vh; */
     }
     #homeSection p {
         font-size: 1.2rem;
@@ -24,7 +24,6 @@ html {
     }
     .homeImage {
         align-items: center;
-        padding-bottom: 10vh;
         width: 100%;
         height: 100%;
     }
