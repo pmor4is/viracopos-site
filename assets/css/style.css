@@ -56,9 +56,6 @@ html {
     .carrosselContainer {
         width: 80%;
     }
-    #photoSection {
-        padding: 2vh 0;
-    }
     /* FIM DO AJUSTES PARA A PÁGINA DE CONTATO */
     
     /* AJUSTES DO FORMULÁRIO */
@@ -367,19 +364,42 @@ button:hover, button:focus {
 #housePageSection {
     /* Altura relativa ao menu principal */
     padding-top: 14vh;
-    height: 70vh;
+    padding-inline: 10vw;
+    
+    /* height: 100%; */
     background-color: black;
     color: #FFFFFF;
 
     display: flex;
     flex-direction: column;
-    padding: 0 10vw;
-
     text-align: center;
 }
-
+#housePageSection div {
+    margin-bottom: 1.5vh;
+}
+#housePageSection p {
+    font-size: 1.5rem;
+}
+.sectionTitle {
+    font-size: 2rem;
+}
 #housePageSection>* {
     flex: 1;
+}
+#houseCarrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    padding: 5vh 0;
+    position: relative;
+    z-index: 1;
+}
+#housePageSection ul li {
+    list-style: none;
+    font-family: RobotoLight;
+    font-size: 1.5rem;
 }
 
 #organizationSection {
