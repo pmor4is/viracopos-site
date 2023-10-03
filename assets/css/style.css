@@ -17,9 +17,16 @@ html {
     #homeSection p {
         font-size: 1.2rem;
     }
+    #homeSection > div {
+        flex-direction: column;
+        gap: 0.5vh;
+        align-items: center;
+    }
     /* Logotipo some quando visualizado em celular */
     .homeImage {
-        display: none;
+        align-items: center;
+        width: 100%;
+        /* display: none; */
     }
     /* FIM DOS AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     
@@ -334,7 +341,6 @@ button:hover, button:focus {
 }
 
 #missionSection {
-    height: 50vh;
     background-color: gray;
     padding-inline: 10vw;
 
@@ -345,7 +351,6 @@ button:hover, button:focus {
 }
 
 #valuesSection {
-    height: 50vh;
     padding-inline: 10vw;
     background-color: #000000;
     color: #FFFFFF;
@@ -354,7 +359,7 @@ button:hover, button:focus {
 }
 
 #cultureSection {
-    height: 50vh;
+    /* height: 50vh; */
     background-color: #FFFFFF;
     text-align: center;
 
