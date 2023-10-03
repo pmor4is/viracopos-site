@@ -12,7 +12,7 @@ html {
 @media (max-width:768px) {
     /* AJUSTES DA PRIMEIRA SEÇÃO DA HOME */
     #homeSection {
-        height: 100vh;
+        height: 60vh;
     }
     #homeSection p {
         font-size: 1.2rem;
@@ -142,13 +142,14 @@ html {
 
 /* HOMEPAGE */
 #homeSection {
+    /* Altura relativa ao menu principal */
+    padding-top: 14vh;
+
     display: flex;
     flex-direction: column;
-    padding-top: 14vh;
-    height: 70vh;
     background-color: #000000;
-    color: white;
     padding-inline: 10vw;
+    color: white;
     text-align: center;
 }
 #homeSectionFirstContent {
@@ -172,7 +173,7 @@ html {
 
     background-color: lightgray;
     padding-inline: 10vw;
-    padding-top: 5vh;
+    padding-top: 2vh;
 
     text-align: center;
     text-decoration: none;
@@ -279,23 +280,25 @@ html {
     display: flex;
     flex-direction: column;
 }
-#formControl input, #formControl button {
+#formControl input, #formControl textarea, #formControl button {
     display: block;
+    /* Não permite o redimensionamento da textarea */
+    resize: none;
     padding: 1.25rem;
     font-weight: 700;
 }
-#formControl input {
+#formControl input, #formControl textarea {
     margin-bottom: 1rem;
     /* color: #FFFFFF; */
     background: #dad8d8;
     border: 0.125rem solid transparent;
-    border-radius: 1.125rem;
+    border-radius: 1rem;
     transition: border-color 0.3s box-shadow 0.3s;
 }
-input:hover, input:focus {
+input:hover, input:focus, textarea:hover, textarea:focus {
     outline: none;
     border-color: #000000;
-    box-shadow: 0 0 0 0.3125rem;
+    box-shadow: 0 0 0 0.2rem;
 }
 #formControl button {
     border: none;
@@ -308,9 +311,6 @@ input:hover, input:focus {
 button:hover, button:focus {
     outline: none;
     background-color: #000000;
-}
-.formMessage {
-    height: 5vh;
 }
 .whatsAppContactButton {
     display: flex;
@@ -368,8 +368,8 @@ button:hover, button:focus {
 /* HOUSE PAGE  */
 #housePageSection {
     /* Altura relativa ao menu principal */
-    padding-top: 14vh;
-    padding-inline: 10vw;
+    /* Também padding abaixo da seção, para não sobrepor com o carrossel de imagens */
+    padding: 14vh 10vw;
     
     /* height: 100%; */
     background-color: black;
@@ -384,14 +384,44 @@ button:hover, button:focus {
 }
 #housePageSection p {
     font-size: 1.5rem;
+    margin-bottom: 2vh;
 }
 .sectionTitle {
     font-size: 2rem;
+    margin-bottom: 2.5vh;
+}
+.subsectionTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5vh;
+}
+.sectionSubtitle {
+
+}
+.subsectionSubtitle {
+    
 }
 #housePageSection>* {
     flex: 1;
 }
-#houseCarrossel {
+#housePhotosCarrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    padding: 5vh 0;
+    position: relative;
+    z-index: 1;
+}
+#bedroomSection {
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+#bedroomPhotosCarrossel {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -408,7 +438,6 @@ button:hover, button:focus {
 }
 
 #organizationSection {
-    height: 50vh;
     background-color: gray;
 
     display: flex;
@@ -419,7 +448,6 @@ button:hover, button:focus {
 }
 
 #dayToDaySection {
-    height: 50vh;
     background-color: black;
     color: #FFFFFF;
 
@@ -431,7 +459,6 @@ button:hover, button:focus {
 }
 
 #financialSection {
-    height: 50vh;
     background-color: gray;
 
     display: flex;
