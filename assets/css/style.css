@@ -614,38 +614,33 @@ button:hover, button:focus {
 
 
 
-
+/* Configuração de fontes */
 .logoFont {
     font-family: CollegiateHeavyOutline;
 }
-
 h1 {
     font-family: RobotoLight;
     font-weight: 900;
     font-size: 5vh;
     margin-bottom: 3vh;
 }
-
 h2 {
     font-family: RobotoLight;
     font-weight: 900;
     font-size: 2rem;
     margin-bottom: 2vh;
 }
-
 h3 {
     font-family: RobotoLight;
     font-weight: 800;
     font-size: 1.8rem;
     margin-bottom: 1.5vh;
 }
-
 h4 {
     font-family: RobotoLight;
     font-weight: 700;
     font-size: 1.5rem;
 }
-
 p {
     font-family: RobotoLight;
     font-size: 1.5rem;
