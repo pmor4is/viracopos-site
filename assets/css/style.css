@@ -180,7 +180,6 @@ html {
     margin-bottom: 1vh;
 }
 #aboutUsSectionContent p {
-    font-size: 1.5rem;
     margin-bottom: 1vh;
 }
 #photoSection {
@@ -380,15 +379,12 @@ button:hover, button:focus {
     margin-bottom: 1.5vh;
 }
 #housePageSection p {
-    font-size: 1.5rem;
     margin-bottom: 2vh;
 }
 .sectionTitle {
-    font-size: 2rem;
     margin-bottom: 2.5vh;
 }
 .subsectionTitle {
-    font-size: 2rem;
     margin-bottom: 1.5vh;
 }
 .sectionSubtitle {
@@ -419,7 +415,6 @@ button:hover, button:focus {
     color: #FFFFFF;
 }
 #bedroomSection p {
-    font-size: 1.5rem;
     margin-bottom: 3vh;
 }
 #bedroomPhotosCarrossel {
@@ -626,21 +621,35 @@ button:hover, button:focus {
 
 h1 {
     font-family: RobotoLight;
-    font-size: 4vh;
+    font-weight: 900;
+    font-size: 5vh;
+    margin-bottom: 3vh;
 }
 
 h2 {
-    font-family: AvantGarde;
+    font-family: RobotoLight;
+    font-weight: 900;
     font-size: 2rem;
+    margin-bottom: 2vh;
 }
 
 h3 {
-    font-family: RobotoMedium;
+    font-family: RobotoLight;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 1.5vh;
+}
+
+h4 {
+    font-family: RobotoLight;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 p {
-    font-family: AvantGarde;
-    font-size: 2rem;
+    font-family: RobotoLight;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
 }
 
 /* Fontes inseridas */
