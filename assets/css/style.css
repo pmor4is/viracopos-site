@@ -32,6 +32,11 @@ html {
         margin: 1vh 0;
     }
 
+    /* AJUSTE DA PÁGINA DA CASA */
+    #housePageSectionContent {
+        flex-direction: column;
+    }
+
     /* AJUSTE DA PÁGINA DE MEMBROS */
     /* Ajuste vertical */
     #membersPageSection div {
@@ -365,7 +370,7 @@ button:hover, button:focus {
 #housePageSection {
     /* Altura relativa ao menu principal */
     /* Também padding abaixo da seção, para não sobrepor com o carrossel de imagens */
-    padding: 14vh 10vw;
+    padding: 14vh 15vw 8vh 15vh;
     
     /* height: 100%; */
     background-color: black;
@@ -374,6 +379,13 @@ button:hover, button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+#housePageSectionContent {
+    display: flex;
+    padding: 2vh;
+}
+#housePageSectionContent div {
+    flex: 1;
 }
 #housePageSection div {
     margin-bottom: 1.5vh;
