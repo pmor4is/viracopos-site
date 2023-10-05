@@ -250,6 +250,7 @@ html {
 }
 
 
+
 #contactSection {
     display: flex;
     flex-direction: column;
@@ -370,7 +371,7 @@ button:hover, button:focus {
 #housePageSection {
     /* Altura relativa ao menu principal */
     /* Também padding abaixo da seção, para não sobrepor com o carrossel de imagens */
-    padding: 14vh 15vw 8vh 15vh;
+    padding: 14vh 15vw 8vh 15vw;
     
     /* height: 100%; */
     background-color: black;
@@ -417,6 +418,10 @@ button:hover, button:focus {
     padding: 5vh 0;
     position: relative;
     z-index: 1;
+}
+.alternateArrow {
+    /* Inverte a cor da seta */
+    filter: invert(1);
 }
 #bedroomSection {
     padding: 10vh 10vw;
