@@ -11,9 +11,13 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: space-around; */
-    gap: 10px;
+    gap: 30px;
     text-align: center;
     text-wrap: wrap;
+}
+#pageDescription {
+    display: flex;
+    flex-direction: column;
 }
 .memberName {
     font-size: 3vh;
@@ -23,11 +27,13 @@
 }
 #membersPageSection > div {
     flex: 0 0 calc(50% -20px);
-    margin-bottom: 20px;
-    padding: 10px;
+    /* margin: 20px; */
+    padding-inline: 30px;
+    gap: 30px;
 }
 #membersPageSection div {
     display: flex;
+    
 }
 #memberDescriptionSection {
     flex: 1;
@@ -37,7 +43,7 @@
 
     text-wrap: wrap;
     align-items: center;
-    padding-inline: 5vw;
+    padding: 1vw;
 }
 #memberDescriptionSection div {
     display: flex;

@@ -13,7 +13,8 @@ html {
 /* Configuração geral de seções */
 section {
     /* O padding é usado por todos, menos o nav */
-    padding-top: 3vh; /* Espaçamento vertical padrão para todas as seções */
+    padding-top: 3vh; 
+    /* Espaçamento vertical padrão para todas as seções */
 }
 
 /* Ajustes para responsividade em mobile */

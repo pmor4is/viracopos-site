@@ -1,19 +1,31 @@
 /* CONTACT PAGE */
+#contactContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 #contactPageSection {
     /* Altura relativa ao menu principal */
-    padding-top: 14vh;
-    height: 70vh;
+    /* height: 70vh; */
+    margin-top: 12vh;
     display: flex;
     background-color: #000000;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 #contactPageSection h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5vh;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-inline: auto; 
+    max-width: 700px; 
 }
 #contactPageSection ul {
-    font-size: 2vh;
-    margin-bottom: 1.5vh;
+    font-size: 1.1em;
+    line-height: 1.6;
+    /* margin-bottom: 15px; */
+     /* Centraliza o texto em telas grandes, mas mantém centralizado em mobile */
+    margin-inline: auto;
+    max-width: 700px;
 }
 #contactPageSection div {
     flex: 1;
@@ -30,6 +42,8 @@
     /* Estilo da fonte das listas */
     font-family: AvantGarde;
 }
+
+
 #mapContainer {
     display: flex;
     flex-direction: column;
