@@ -1,0 +1,53 @@
+/* ABOUT US */
+#aboutUsPageSection {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding-inline: 10vw;
+    padding-top: 15vh;
+    /* Retirando padding-top para corrigir o problema da barra cinza */
+    /* padding-top: 2vh;  */
+    text-align: center;
+  }
+/* Estilos em comum para as seções "Missão" e "Valores" */
+#missionSection, 
+#valuesSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Missão */
+#missionSection {
+    background-color: #ededed; /* Fundo claro */
+     color: #333333; /* Texto escuro */
+}
+
+/* Valores e cultura */
+#valuesSection {
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #FFFFFF; /* Texto claro */
+}
+
+/* Estilo para todos os títulos das seções */
+#aboutUsPageSection h2,
+#missionSection h2,
+#valuesSection h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-inline: auto; 
+    max-width: 700px; 
+}
+
+/* Estilo geral para os parágrafos das seções */
+#aboutUsPageSection p,
+#missionSection p,
+#valuesSection p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+     /* Centraliza o texto em telas grandes, mas mantém centralizado em mobile */
+    margin-inline: auto;
+    max-width: 700px;
+}

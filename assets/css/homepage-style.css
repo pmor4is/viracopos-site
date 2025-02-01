@@ -1,0 +1,141 @@
+
+
+/* HOMEPAGE */
+#homeSection {
+    /* Altura relativa ao menu principal */
+    padding-top: 14vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding-inline: 15vw;
+    color: white;
+    text-align: center;
+}
+#homeSectionFirstContent {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+}
+#homeSectionSecondContent {
+    display: flex;
+    /* Espaço ao redor do segundo conteúdo */
+    height: 100%;
+    padding: 3vh;
+    gap: 20vw;
+}
+.homeImage {
+    width: 30%;
+}
+#aboutUsSection {
+    display: flex;
+    flex-direction: column;
+
+    background-color: lightgray;
+    padding-inline: 10vw;
+
+    
+
+    text-align: center;
+    text-decoration: none;
+}
+#aboutUsSectionContent {
+    & h2 {
+        font-size: 2.0rem;
+        margin-bottom: 1vh;
+    }
+    & p {
+        margin-bottom: 1vh;
+    }
+}
+#photoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    /* Padding em cima e embaixo com 5vh */
+    padding: 5vh 0;
+    background-color: gray;
+    text-align: center;
+    /* position relative faz evitar que as fotos sobrepoem outro elemento */
+    position: relative;
+    z-index: 1;
+}
+
+
+#contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Padding em cima e embaixo com 3vh e laterais com 10vw */
+    padding: 3vh 10vw;
+    background-color: lightgray;
+    text-align: center;
+}
+#contactSection p {
+    font-size: 2vh;
+    margin-bottom: 1.8vh;
+}
+
+/* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
+#formContainer {
+    background-color: #bbb8b8;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    /* Dimensões envolta do container */
+    padding: 2vh;
+    border-radius: 20px;
+    /* opacity: 0.5; */
+}
+#formControl {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+#formControl input, #formControl textarea, #formControl button {
+    display: block;
+    /* Não permite o redimensionamento da textarea */
+    resize: none;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+#formControl input, #formControl textarea {
+    margin-bottom: 1rem;
+    /* color: #FFFFFF; */
+    background: #dad8d8;
+    border: 0.125rem solid transparent;
+    border-radius: 1rem;
+    transition: border-color 0.3s box-shadow 0.3s;
+}
+input:hover, input:focus, textarea:hover, textarea:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem;
+}
+#formControl button {
+    border: none;
+    border-radius: 99px;
+    background: #3d3c3c;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover, button:focus {
+    outline: none;
+    background-color: #000000;
+}
+.whatsAppContactButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1vh;
+    margin-bottom: 1vh;
+    background-color: black;
+    color: white;
+    border-radius: 99px;
+    text-decoration: none;
+    font-family: RobotoMedium;
+}

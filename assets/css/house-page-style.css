@@ -1,0 +1,114 @@
+
+/* HOUSE PAGE  */
+#housePageSection {
+    /* Altura relativa ao menu principal */
+    /* Também padding abaixo da seção, para não sobrepor com o carrossel de imagens */
+    padding: 14vh 15vw 8vh 15vw;
+    
+    /* height: 100%; */
+    background-color: black;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#housePageSectionContent {
+    display: flex;
+    padding: 2vh;
+}
+#housePageSectionContent div {
+    flex: 1;
+}
+#housePageSection div {
+    margin-bottom: 1.5vh;
+}
+#housePageSection p {
+    margin-bottom: 2vh;
+}
+.sectionTitle {
+    margin-bottom: 2.5vh;
+}
+.subsectionTitle {
+    margin-bottom: 1.5vh;
+}
+.sectionSubtitle {
+
+}
+.subsectionSubtitle {
+    
+}
+#housePageSection>* {
+    flex: 1;
+}
+#housePhotosCarrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    padding: 5vh 0;
+    position: relative;
+    z-index: 1;
+}
+.alternateArrow {
+    /* Inverte a cor da seta */
+    filter: invert(1);
+}
+#bedroomSection {
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+#bedroomSection p {
+    margin-bottom: 3vh;
+}
+#bedroomPhotosCarrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    padding: 5vh 0;
+    position: relative;
+    z-index: 1;
+}
+#housePageSection ul li {
+    list-style: none;
+    font-family: RobotoLight;
+    font-size: 1.5rem;
+}
+
+#organizationSection {
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+
+    text-align: center;
+}
+
+#dayToDaySection {
+    background-color: black;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 10vw;
+
+    text-align: center;
+}
+
+#financialSection {
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 10vw;
+
+    text-align: center;
+}
